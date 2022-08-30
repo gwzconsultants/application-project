@@ -19,7 +19,7 @@ function App() {
         <Route path="/terms" element={<TermsPage /> }/>
         <Route path="/dashboard" element={<DashboardPage /> }/>
         <Route path="/table" element={<Table /> }/>
-        <Route path="/application-details" element={<ApplicationDetailsPage /> }/>
+        <Route path="/application-details/" element={<ApplicationDetailsPage /> }/>
       </Routes>
     </div>
   );

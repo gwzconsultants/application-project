@@ -15,8 +15,20 @@ import icon6 from "../assets/details-icon/icon6.png";
 import icon7 from "../assets/details-icon/icon7.png";
 import question from "../assets/details-icon/question-icon.png";
 import { useEffect } from "react";
+import data from "../data/applicant_data.json"
 
 const ApplicationDetails = () => {
+  var url_string = window.location.href
+  var url = new URL(url_string);
+  var id = url.searchParams.get("id");
+  var record = {}
+  for(var i = 0; i<data.length;i++) {
+    if(data.at(i).number === id) {
+      record = data.at(i);
+      break;
+    }
+  }
+  console.log(record)
   useEffect(() => {
     window.scrollTo(0,0);
   },[])
@@ -70,7 +82,7 @@ const ApplicationDetails = () => {
             </p>
             <p className="text-xl font-bold my-5 px-3">Latest update:</p>
             <p className="text-xl font-bold my-5 px-3">
-              Biometrics - August 5, 2022:{" "}
+              Biometrics - {record.biometric.date}:{" "}
               <span className="font-normal">Completed</span>
             </p>
           </div>
@@ -80,30 +92,30 @@ const ApplicationDetails = () => {
             </p>
             <p className="text-xl font-bold mb-2 mt-5 px-3">
               Principal applicant:{" "}
-              <span className="font-normal">PANKAJKUMAR AMBALAL PATEL</span>
+              <span className="font-normal">{record.name}</span>
             </p>
             <p className="text-xl font-bold my-2 px-3">
               Unique Client Identifier (UCI):{" "}
-              <span className="font-normal">1129686272</span>
+              <span className="font-normal">{record.uci}</span>
             </p>
             <p className="text-xl font-bold my-2 px-3">
               Application number:{" "}
-              <span className="font-normal">V400751079</span>
+              <span className="font-normal">{record.number}</span>
             </p>
             <p className="text-xl font-bold my-2 px-3">
-              Date received: <span className="font-normal">July 29, 2022</span>
+              Date received: <span className="font-normal">{record.dateReceived}</span>
             </p>
             <p className="text-xl font-bold my-2 px-3">Biometrics:</p>
             <p className="text-xl font-bold px-3 ml-8">
               Biometrics number:{" "}
-              <span className="font-normal">00077520220805091127</span>
+              <span className="font-normal">{record.biometric.number}</span>
             </p>
             <p className="text-xl font-bold px-3 ml-8">
               Date of biometrics enrolment:{" "}
-              <span className="font-normal">August 5, 2022</span>
+              <span className="font-normal">{record.biometric.dateReceived}</span>
             </p>
             <p className="text-xl font-bold mb-5 px-3 ml-8">
-              Expiry date: <span className="font-normal">August 5, 2032</span>
+              Expiry date: <span className="font-normal">{record.biometric.expiryDate}</span>
             </p>
           </div>
         </div>
@@ -116,7 +128,7 @@ const ApplicationDetails = () => {
           <div className="flex justify-between py-3">
             <p className="font-bold text-xl">
               Application recieved:{" "}
-              <span className="font-medium">July 29, 2022</span>
+              <span className="font-medium">{record.date}</span>
             </p>
             <p className="font-bold text-xl">Estimated completion date*</p>
           </div>

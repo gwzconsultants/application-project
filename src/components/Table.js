@@ -17,6 +17,7 @@ const Table = () => {
             <th className="py-6 px-4">Action</th>
           </tr>
         </thead>
+        
         {data &&
           data.map((item) => (
             <tbody key={item.number} className="even:bg-gray-100">
@@ -37,7 +38,7 @@ const Table = () => {
                   {item.status}
                 </td>
                 <td className="font-semibold text-lg text-[#335075] underline py-8 px-4 border-2 border-gray-200">
-                  <Link to={`/application-details`}>
+                  <Link to={{ pathname: "/application-details", search: "?id=" + item.number}}>
                     Check full application status
                   </Link>
                 </td>
