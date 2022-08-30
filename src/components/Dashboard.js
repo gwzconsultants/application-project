@@ -15,7 +15,7 @@ const Dashboard = () => {
   const [isWarning, setIsWarning] = useState(true);
   return (
     <div className="h-full">
-      <div className="w-8/12 mx-auto py-5">
+      <div className="w-11/12 mx-auto py-5">
         {/* Navlinks */}
         <div className="flex flex-nowrap gap-2 text-lg">
           <Link to="/" className="underline">
