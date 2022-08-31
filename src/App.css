@@ -1,3 +1,68 @@
 .App {
   text-align: center;
 }
+
+.signin-button {
+	flex: 1 1 100%;
+	max-width: 50%;
+	font-family: Lato, "sans-serif" "Noto Sans";
+}
+
+.form-input {
+	font-family: Lato, "sans-serif" "Noto Sans";
+	font-weight: bold;
+	line-height: 1.45rem;
+	font-size: 20px;
+}
+
+.red-bold {
+	font-weight: bold;
+	color: #d3080c;
+}
+
+.h1-page-title {
+	font-size: 2.5em;
+	margin-top: 0.75em;
+	padding-bottom: 0.2em;
+	border-bottom: 1px solid #af3c43;
+	font-weight: 600;
+    line-height: 1.2;
+    color: inherit;
+	font-family: Lato, "sans-serif" "Noto Sans";
+}
+
+.terms-master-div {
+	line-height: 1.65em;
+}
+
+.terms-div {
+	font-size: 22px;
+	line-height: 1.45em;
+}
+
+.ul-padding {
+	padding-inline-start: 40px;
+}
+
+.li-padding {
+	padding-inline-start: 20px;
+}
+
+.terms-button {
+	font-family: Lato, "sans-serif" "Noto Sans" !important;
+}
+
+.orange-box {
+    border-style: dotted dotted dotted solid !important;
+	border-color: #f90;
+	border-width: thin thin thin thick;
+}
+
+.table-text {
+	font-size: 22px;
+	font-weight: 600;
+}
+
+.shadower {
+	box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+}

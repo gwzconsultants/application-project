@@ -15,7 +15,7 @@ const Dashboard = () => {
   const [isWarning, setIsWarning] = useState(true);
   return (
     <div className="h-full">
-      <div className="w-11/12 mx-auto py-5">
+      <div className="w-8/12 mx-auto py-5">
         {/* Navlinks */}
         <div className="flex flex-nowrap gap-2 text-lg">
           <Link to="/" className="underline">
@@ -25,7 +25,7 @@ const Dashboard = () => {
           <Link to="/signin">Your account</Link>
         </div>
         {/* User Actions Container */}
-        <div className="flex justify-end items-center gap-2">
+        <div className="flex justify-end items-center gap-2 pt-4">
           <p className="text-lg mr-2">Signed in as KARAN SINGH</p>
           <button className="transition duration-300 px-4 py-3 rounded-lg font-medium text-[#335075] bg-gray-100 border-2 border-white hover:border-[#335075]">
             Account home
@@ -46,7 +46,7 @@ const Dashboard = () => {
         </div>
         {/* Warning Container */}
         {isWarning && (
-          <div className="transition-all relative my-4 py-7 px-5 flex items-center bg-[#f9f4d4] border-l-4 border-l-orange-400">
+          <div className="transition-all relative my-4 py-7 px-5 flex items-center bg-[#f9f4d4] orange-box">
             <img
               src={closeButton}
               alt="close"
@@ -58,23 +58,24 @@ const Dashboard = () => {
             </div>
             <div className="text-[22px] text-left w-3/4">
               <p>If you have an existing IRCC account:</p>
-              <li>
-                This portal account is not connected with your IRCC account.
+              <li className="li-padding">
+                This portal account is <strong>not</strong> connected with your IRCC account.
               </li>
-              <li>
+              <li className="li-padding">
                 You'll only see visitor visa, transit visa or study permit
                 applications you create and submit via this Portal account.
               </li>
-              <li>
+              <li className="li-padding">
                 To view your other applications, access messages and status
                 updates for these applications, or link paper applications, sign
                 in to your IRCC account.
               </li>
+              
             </div>
           </div>
         )}
         {/* Start application and citizenship */}
-        <div className="flex gap-24 mt-10 text-left">
+        <div className="flex gap-28 mt-10 text-left">
           <div className="flex flex-col gap-3">
             <p className="text-4xl font-medium">Start an application</p>
             <Link to="#" className="underline text-[22px] text-[#335075]">
@@ -82,7 +83,7 @@ const Dashboard = () => {
             </Link>
           </div>
           <div className="flex flex-col gap-3">
-            <p className="text-4xl font-medium">Start an application</p>
+            <p className="text-4xl font-medium">Citizenship</p>
             <Link to="#" className="underline text-[22px] text-[#335075]">
               Download Citizenship e-Certificate
             </Link>
@@ -98,7 +99,7 @@ const Dashboard = () => {
               Apply for a visitor visa, transit visa or a study permit
             </p>
           </div>
-          <div className="shadow-xl flex flex-col mt-5 text-left">
+          <div className="shadower flex flex-col mt-5 text-left">
             {/* <div className="flex gap-10 justify-between  text-2xl text-white font-medium items-center py-6 px-4 bg-[#335075]">
               <p>Application type</p>
               <p>Application number</p>
@@ -114,14 +115,14 @@ const Dashboard = () => {
             <div className="flex gap-5 justify-end py-6 text-xl  font-light">
               <p className="text-gray-400">Items per page:</p>
               <select className="border-b border-b-black">
-                <option defaultValue value="5">
-                  5
+                <option defaultValue value="15">
+                  15
                 </option>
-                <option value="10">10</option>
-                <option value="25">25</option>
+                <option value="15">15</option>
+                <option value="30">30</option>
                 <option value="100">100</option>
               </select>
-              <p>5 of 12</p>
+              <p>12 of 12</p>
               <img src={first} alt="first" />
               <img src={previous} alt="previous" />
               <img src={next} alt="next" />
@@ -140,8 +141,8 @@ const Dashboard = () => {
               submitted, or delete it from your account.
             </p>
           </div>
-          <div className="shadow-xl flex flex-col mt-5 text-left">
-            {/* <div className="flex gap-10 justify-between text-2xl text-white font-medium items-center py-6 px-4 bg-[#335075]">
+          <div className="shadower flex flex-col mt-5 text-left">
+            <div className="flex gap-10 justify-between text-white font-medium items-center py-6 px-6 bg-[#335075] table-text">
               <p>Application type</p>
               <p>Date created</p>
               <p>Days left to submit</p>
@@ -150,16 +151,15 @@ const Dashboard = () => {
             </div>
             <div className="flex justify-center bg-gray-100 py-6 text-2xl">
               <p>No data available in table</p>
-            </div> */}
-            <TableEmpty />
+            </div>
             <div className="flex gap-5 justify-end py-6 text-xl  font-light">
               <p className="text-gray-400">Items per page:</p>
               <select className="border-b border-b-black">
-                <option defaultValue value="5">
-                  5
+                <option defaultValue value="15">
+                  15
                 </option>
-                <option value="10">10</option>
-                <option value="25">25</option>
+                <option value="15">15</option>
+                <option value="30">30</option>
                 <option value="100">100</option>
               </select>
               <p>0 of 0</p>
@@ -184,7 +184,7 @@ const Dashboard = () => {
           <p className="text-lg">Date modified: 2022-06-14</p>
         </div>
         {/* Report a Problem Container */}
-        <div className="flex justify-center items-center flex-nowrap box-border mt-10 bg-[#eaebed] w-1/5 rounded-lg border-4 hover:border-[#284162] transition-all shadow-lg">
+        <div className="flex justify-center items-center flex-nowrap box-border mt-10 bg-[#eaebed] w-1/4 rounded-lg border-4 hover:border-[#284162] transition-all shadower">
           <Link to="#" className="text-base text-[#284162] p-2">
             Report a problem on this page
           </Link>

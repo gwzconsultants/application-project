@@ -34,7 +34,7 @@ const ApplicationDetails = () => {
   },[])
   return (
     <div className="w-full">
-      <div className="w-11/12 mx-auto py-5">
+      <div className="w-8/12 mx-auto py-5">
         {/* Navlinks */}
         <div className="flex flex-nowrap gap-2 text-lg">
           <Link to="/" className="underline">
@@ -44,7 +44,7 @@ const ApplicationDetails = () => {
           <Link to="/application-details">Application status</Link>
         </div>
         {/* User Actions Container */}
-        <div className="flex justify-end items-center gap-2">
+        <div className="flex justify-end items-center gap-2 pt-4">
           <p className="text-lg mr-2">Signed in as KARAN SINGH</p>
           <button className="transition duration-300 px-4 py-3 rounded-lg font-medium text-[#335075] bg-gray-100 border-2 border-white hover:border-[#335075]">
             Account home
@@ -65,14 +65,14 @@ const ApplicationDetails = () => {
         </div>
         {/* Additional documents text */}
         <div className="flex gap-5 text-xl font-normal my-4">
-          <p>Check the status and review the status of your application.</p>
+          <p>Check the status and review the details of your application.</p>
           <Link to="#" className="text-[#335075] underline">
-            How to submit additional documents.
+            How to submit additional documents
           </Link>
         </div>
         {/* Application Status & Information */}
-        <div className="flex gap-8 my-8 text-left">
-          <div className="shadow-md w-2/4 h-fit">
+        <div className="flex gap-12 my-8 text-left">
+          <div className="shadower w-2/4 h-fit">
             <p className="text-[34px] font-semibold bg-[#eaebed] p-3">
               Application Status
             </p>
@@ -86,7 +86,7 @@ const ApplicationDetails = () => {
               <span className="font-normal">Completed</span>
             </p>
           </div>
-          <div className="shadow-md w-2/4">
+          <div className="shadower w-2/4">
             <p className="text-[34px] font-semibold bg-[#eaebed] p-3">
               Applicant information
             </p>
@@ -228,7 +228,7 @@ const ApplicationDetails = () => {
           </div>
         </div>
         {/* Messages about application table */}
-        <div className="shadow-lg mt-4">
+        <div className="shadower mt-4">
           <table className="text-left w-full table-auto border-collapse border-2 border-gray-200">
             <thead className="text-white text-xl bg-[#335075]">
               <tr>
@@ -306,7 +306,7 @@ const ApplicationDetails = () => {
           <p className="text-lg">Date modified: 2022-06-14</p>
         </div>
         {/* Report a Problem Container */}
-        <div className="flex justify-center items-center flex-nowrap box-border mt-10 bg-[#eaebed] w-1/5 rounded-lg border-4 hover:border-[#284162] transition-all shadow-lg">
+        <div className="flex justify-center items-center flex-nowrap box-border mt-10 bg-[#eaebed] w-1/4 rounded-lg border-4 hover:border-[#284162] transition-all shadower">
           <Link to="#" className="text-base text-[#284162] p-2">
             Report a problem on this page
           </Link>

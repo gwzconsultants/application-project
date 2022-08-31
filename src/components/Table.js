@@ -6,7 +6,7 @@ const Table = () => {
   // const { data } = useFetch("https://jsonkeeper.com/b/O4YQ");
   return (
     <div>
-      <table className="text-center w-full table-auto border-collapse border-2 border-gray-200">
+      <table className="w-full table-auto border-collapse border-2 border-gray-200">
         <thead className="text-white text-xl bg-[#335075]">
           <tr>
             <th className="py-6 px-4">Application Type</th>
