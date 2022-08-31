@@ -18,6 +18,8 @@ import { useEffect } from "react";
 import data from "../data/applicant_data.json"
 
 const ApplicationDetails = () => {
+    document.title = "Application status";
+
   var url_string = window.location.href
   var url = new URL(url_string);
   var id = url.searchParams.get("id");
@@ -47,7 +49,7 @@ const ApplicationDetails = () => {
         <div className="flex justify-end items-center gap-2 pt-4">
           <p className="text-lg mr-2">Signed in as KARAN SINGH</p>
           <button className="transition duration-300 px-4 py-3 rounded-lg font-medium text-[#335075] bg-gray-100 border-2 border-white hover:border-[#335075]">
-            Account home
+            <Link to="/dashboard">Account home</Link>
           </button>
           <button className="transition duration-300 px-4 py-3 rounded-lg font-medium text-[#335075] bg-gray-100 border-2 border-white hover:border-[#335075]">
             Account profile

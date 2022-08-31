@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 
 const Signin = () => {
+    document.title = "Sign in";
+
   return (
     <div className="h-full">
       <div className="w-8/12 mx-auto py-5">

@@ -12,6 +12,8 @@ import Table from "./Table";
 import TableEmpty from "./TableEmpty";
 
 const Dashboard = () => {
+    document.title = "My IRCC portal account";
+
   const [isWarning, setIsWarning] = useState(true);
   return (
     <div className="h-full">
