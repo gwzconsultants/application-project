@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 const Terms = () => {
   return (
-    <div className="h-full">
-      <div className="w-11/12 mx-auto py-5">
+    <div className="h-full terms-master-div">
+      <div className="w-9/12 mx-auto py-5">
         {/* Navlinks */}
         <div className="flex flex-nowrap gap-2 text-lg">
           <Link to="/" className="underline">
@@ -11,15 +11,16 @@ const Terms = () => {
           </Link>
         </div>
         {/* Signin Heading */}
-        <div className="text-left pt-10 pb-2 border-red-700 border-b">
-          <h1 className="text-[38px] font-medium">Terms and conditions</h1>
+        <div className="text-left pb-2">
+          <h1 className="h1-page-title">Terms and conditions</h1>
         </div>
         {/* Agreement Text */}
-        <div className="text-left text-xl py-4">
+        <div className="text-left text-xl py-2 terms-div">
           <p className="mb-4">
             By accessing your account, you are agreeing to abide by the
             following Terms and Conditions of Use:
           </p>
+          <ul className="terms-ul">
           <li className="list-disc">
             You agree to keep your identification number(s) confidential and to
             not share it (them) with anyone. If you suspect that others have
@@ -39,6 +40,7 @@ const Terms = () => {
           <li className="list-disc">
             You understand and accept that we are not responsible for any losses
             or damages incurred by anyone because of:
+            <ol>
             <li className="list-decimal ml-8">
               The use of the information available in your account
             </li>
@@ -46,6 +48,7 @@ const Terms = () => {
               Any restrictions, delay, malfunction or unavailability of your
               account
             </li>
+            </ol>
           </li>
           <li className="list-disc">
             You understand and accept that by using your account and applying
@@ -58,6 +61,7 @@ const Terms = () => {
             Conditions, choose "I do not accept". Note, you will not be able to
             access your account unless you accept the Terms and Conditions.
           </li>
+          </ul>
           <p className="mt-6">
             If you use another type of browser software you should check with
             your software supplier to make sure that your browser has 128-bit
@@ -73,11 +77,11 @@ const Terms = () => {
         <div className="flex items-center gap-4">
           <Link
             to="/dashboard"
-            className="transition duration-300 px-4 py-3 rounded-lg font-medium text-white bg-[#335075] border-2 border-white hover:border-[#335075]"
+            className="transition duration-300 px-4 py-3 rounded-lg font-medium text-white bg-[#335075] border-2 border-white hover:border-[#335075] terms-button"
           >
             I accept
           </Link>
-          <Link to="#" className="transition duration-300 px-4 py-3 rounded-lg font-medium text-[#335075] bg-gray-100 border-2 border-white hover:border-[#335075]">
+          <Link to="#" className="transition duration-300 px-4 py-3 rounded-lg font-medium text-[#335075] bg-gray-100 border-2 border-white hover:border-[#335075] terms-button">
             I do not accept
           </Link>
         </div>
@@ -86,7 +90,7 @@ const Terms = () => {
           <p className="text-lg">Date modified: 2022-06-14</p>
         </div>
         {/* Report a Problem Container */}
-        <div className="flex justify-center items-center flex-nowrap box-border mt-8 bg-[#eaebed] w-1/5 rounded-lg border-4 hover:border-[#284162] transition-all shadow-lg">
+        <div className="flex justify-center items-center flex-nowrap box-border mt-8 bg-[#eaebed] w-1/4 rounded-lg border-4 hover:border-[#284162] transition-all shadow-lg">
           <Link to="#" className="text-base text-[#284162] p-2">
             Report a problem on this page
           </Link>

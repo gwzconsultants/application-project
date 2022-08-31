@@ -30,3 +30,20 @@
     color: inherit;
 	font-family: Lato, "sans-serif" "Noto Sans";
 }
+
+.terms-master-div {
+	line-height: 1.65em;
+}
+
+.terms-div {
+	font-size: 22px;
+	line-height: 1.45em;
+}
+
+.terms-ul {
+	padding-inline-start: 40px;
+}
+
+.terms-button {
+	font-family: Lato, "sans-serif" "Noto Sans" !important;
+}
