@@ -20,7 +20,7 @@ const Terms = () => {
             By accessing your account, you are agreeing to abide by the
             following Terms and Conditions of Use:
           </p>
-          <ul className="terms-ul">
+          <ul className="ul-padding">
           <li className="list-disc">
             You agree to keep your identification number(s) confidential and to
             not share it (them) with anyone. If you suspect that others have
@@ -90,7 +90,7 @@ const Terms = () => {
           <p className="text-lg">Date modified: 2022-06-14</p>
         </div>
         {/* Report a Problem Container */}
-        <div className="flex justify-center items-center flex-nowrap box-border mt-8 bg-[#eaebed] w-1/4 rounded-lg border-4 hover:border-[#284162] transition-all shadow-lg">
+        <div className="flex justify-center items-center flex-nowrap box-border mt-8 bg-[#eaebed] w-1/4 rounded-lg border-4 hover:border-[#284162] transition-all shadower">
           <Link to="#" className="text-base text-[#284162] p-2">
             Report a problem on this page
           </Link>
